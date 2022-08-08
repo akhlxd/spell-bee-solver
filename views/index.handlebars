@@ -1,0 +1,67 @@
+<div id="formdiv">
+    <section class="container-fluid" id="form">
+
+        <h2 id="mainHeading">Please insert your characters :</h2>
+
+        <form action="/" method="POST"> 
+
+            <div class="form-group mb-4 mb-sm-3">
+              <div class="field">
+								<label for="spec_char" class="label">Special Character</label>
+								<input type="text" maxlength=1 onkeypress="return /[a-z]/i.test(event.key)" name="spec_char" id="char" class="form-control" placeholder="Enter special character" aria-label="Default" 
+								aria-describedby="inputGroup-sizing-default" required >
+              </div>
+              <div class="row">
+								<div class="char col-sm-6">
+									<div class="form-group mb-3" required>
+										<label for="ch1" class="label">First Character:</label>
+										<input name="ch1" type="text" id="char" maxlength=1 onkeypress="return /[a-z]/i.test(event.key)" class="form-control" placeholder="Enter first normal character" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" required>
+									</div>
+								</div>
+							   <div class="char col-sm-6">
+									<div class="form-group mb-3" required>
+										<<label for="ch2" class="label">Second Character:</label>
+										<input name="ch2" type="text" id="char" maxlength=1 onkeypress="return /[a-z]/i.test(event.key)" class="form-control" placeholder="Enter second normal character" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" required>
+									</div>
+									</div>
+								</div>
+							<div class="row">
+								<div class="char col-sm-6 mb-1">
+									<div class="form-group mb-3" required>
+										<label for="ch3" class="label">Third Character:</label>
+										<input name="ch3" type="text" id="char" maxlength=1 onkeypress="return /[a-z]/i.test(event.key)" class="form-control" placeholder="Enter third normal character" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" required>
+									</div>
+								</div>
+							   <div class="char col-sm-6 mb-1">
+									<div class="form-group mb-3" required>
+										<<label for="ch4" class="label">Fourth Character:</label>
+										<input name="ch4" type="text" id="char" maxlength=1 onkeypress="return /[a-z]/i.test(event.key)" class="form-control" placeholder="Enter fourth normal character" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="char col-sm-6 mb-sm-2">
+									<div class="form-group mb-3" required>
+										<label for="ch5" class="label">Fifth Character:</label>
+										<input name="ch5" type="text" id="char" maxlength=1 onkeypress="return /[a-z]/i.test(event.key)" class="form-control" placeholder="Enter fifth normal character" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" required>
+									</div>
+								</div>
+							   <div class="char col-sm-6 mb-sm-1">
+									<div class="form-group mb-3" required>
+										<<label for="ch6" class="label">Sixth Character:</label>
+										<input name="ch6" type="text" id="char" maxlength=1 onkeypress="return /[a-z]/i.test(event.key)" class="form-control" placeholder="Enter sixth normal character" aria-label="Default"
+                  aria-describedby="inputGroup-sizing-default" required>
+									</div>
+								</div>
+							</div>
+            <div class="d-flex justify-content-center align-items-end mx-0 mt-2">
+                <button type="submit" class="btn btn-outline-primary" id="reg">Submit</button>
+            </div>
+        </form>
+    </section>
+</div>

@@ -1,11 +1,10 @@
 // setting up the required modules
 
 const express = require('express');
-const PORT = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 const path = require('path');
 const exphbs = require('express-handlebars');
 const sessions = require('express-session');
-const cookieParser = require("cookie-parser");
 const app = express();
 
 //setting up templating engine
@@ -35,10 +34,10 @@ const spawn = require('child_process').spawn;
 //let html='';
 
 app.get('/', (req, res) => {
-    res.redirect('/index');
+    res.render('index');
 });
 
-app.post('/index', (req, res) => {
+app.post('/', (req, res) => {
 	console.log(req.body)
 	
 	let html='';
@@ -95,4 +94,4 @@ app.get('/result', (req, res) => {
 	res.render('result', {context});
 });
 
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.listen(port, () => console.log(`Server started on port ${port}`));

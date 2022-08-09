@@ -15,12 +15,24 @@ body {
 	color: #BB86FC;
 }
 
+
 #formdiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-height: 92vh;
 }
+
+#form {
+  background-color: #121212;
+  max-width: 700px;
+  border: 1px solid black; 
+  border-radius: 12px;
+  padding: 50px 50px 30px 50px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
 
 #mainHeading {
 	color: #BB86FC;
@@ -30,46 +42,16 @@ body {
   padding: 10px 0 15px 0;
 }
 
-/*#result {*/
-  /*text-align: center;*/
-  /*font-size: 3rem;*/
-  /*font-weight: 700;*/
-  /*margin: 30px 0;*/
-/*}*/
-
-#form {
-  background-color: #121212;
-  max-width: 700px;
-  border: 1px solid black; 
-  border-radius: 12px;
-  padding: 20px 50px 30px 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 #reg {
   background-color: #BB86FC;
   color: #000;
   padding: 5px 12px;
 	border : 0px;
-}
-
-#reg_sub {
-	background-color: #023e8a;
-	color: white;
-	padding: 5px 12px;
+	margin-top: 10px;
 }
 
 .field {
 	margin-bottom: 1.5rem;
-}
-
-/*#signin {*/
-	/*color: #fff;*/
-/*}*/
-
-#signin:hover {
-	color: white;
 }
 
 #reg:hover {
@@ -82,23 +64,6 @@ body {
 	padding: 0px 10px;
 }
 
-#reg_sub:hover {
-	color: white;
-	background-color: #301934;
-}
-
-.rescon {
-	background-color: rgba(255, 255, 255, 0.94);
-}
-
-.mb-sm-4 {
-	margin-bottom: 20px;
-}
-
-.tex {
-	size: 2rem;
-}
-
 .label {
 	color: #BB86FC;
 	font-size: 1rem;
@@ -109,11 +74,10 @@ body {
 #res {
 	display: flex;
 	background-color: #121212;
-  /*max-width: 200px;*/
   border: 1px solid black; 
   border-radius: 12px;
-  padding: 20px 50px 30px 50px;
-  margin-bottom: 20px;
+  padding: 60px 50px 30px 50px;
+  margin: 20px 0px;
 	justify-content: center;
 	align-self: center;
 }
@@ -128,14 +92,12 @@ td {
 	display: flex;
   flex-direction: row;
   justify-content: center;
-	/*align-items: center;*/
+	align-items: center;
 	color: white;
 	font-size: 1.5rem;
 	margin-bottom:1rem;
 
 }
-
-
 
 a:link {
 	color: #BB86FC; 
@@ -143,26 +105,41 @@ a:link {
 }
 
 a:visited {
-	color: #BB86FC;
+	color: #BB86FC; 
+	text-decoration: none;
 }
 
-/*a:hover {*/
-	/*color: #992096;*/
-/*}*/
-
-
-}
-
-@media (max-width: 70px) {
+@media (max-width: 480px) {
   #form {
-    padding: 190px 22px 30px;
+    padding: 40px 22px 30px;
   }
 
   #mainHeading {
-    padding: 90px 0 30px 0;
+    padding: 20px 0 30px 0;
   }
 	#foot {
-		display: flex;
 		flex-direction: column;
+		justify-content: center;
+		font-size: 1.2rem;
+	}
+	#reg {
+		margin-top: 20px;
+	}
+	#res {
+		margin-top: 30px;
+		padding-top: 40px;
 	}
 }
+
+@media (min-width: 800px) and (max-width:1100px) {
+	#form {
+    padding: 30px 22px 30px;
+  }
+
+  #mainHeading {
+    padding: 30px 0 30px 0;
+  }
+
+}
+
+
